@@ -22,13 +22,13 @@ public class MarsRover {
         if (Command.MOVE.getShortName().equals(command)) {
             String directionShortName = marsRoverPosition.direction.getShortName();
             if (directionShortName.equals(Direction.NORTH.getShortName())) {
-                marsRoverPosition.coordinates.coordinatesY++;
+                marsRoverPosition.coordinatesY++;
             } else if (directionShortName.equals(Direction.EAST.getShortName())) {
-                marsRoverPosition.coordinates.coordinatesX++;
+                marsRoverPosition.coordinatesX++;
             } else if (directionShortName.equals(Direction.WEST.getShortName())) {
-                marsRoverPosition.coordinates.coordinatesX--;
+                marsRoverPosition.coordinatesX--;
             } else if (directionShortName.equals(Direction.SOUTH.getShortName())) {
-                marsRoverPosition.coordinates.coordinatesY--;
+                marsRoverPosition.coordinatesY--;
             }
         }
         if (Command.TURN_LEFT.getShortName().equals(command)) {

@@ -48,13 +48,13 @@ public class MarsRoverPositionTest {
 
         String directionShortName = marsRoverPosition.direction.getShortName();
         if (directionShortName.equals(Direction.NORTH.getShortName())) {
-            marsRoverPosition.coordinates.coordinatesY++;
+            marsRoverPosition.coordinatesY++;
         } else if (directionShortName.equals(Direction.EAST.getShortName())) {
-            marsRoverPosition.coordinates.coordinatesX++;
+            marsRoverPosition.coordinatesX++;
         } else if (directionShortName.equals(Direction.WEST.getShortName())) {
-            marsRoverPosition.coordinates.coordinatesX--;
+            marsRoverPosition.coordinatesX--;
         } else if (directionShortName.equals(Direction.SOUTH.getShortName())) {
-            marsRoverPosition.coordinates.coordinatesY--;
+            marsRoverPosition.coordinatesY--;
         }
 
         assertThat(marsRoverPosition.getCoordinatesY(), is(1));
@@ -66,13 +66,13 @@ public class MarsRoverPositionTest {
 
         String directionShortName = marsRoverPosition.direction.getShortName();
         if (directionShortName.equals(Direction.NORTH.getShortName())) {
-            marsRoverPosition.coordinates.coordinatesY++;
+            marsRoverPosition.coordinatesY++;
         } else if (directionShortName.equals(Direction.EAST.getShortName())) {
-            marsRoverPosition.coordinates.coordinatesX++;
+            marsRoverPosition.coordinatesX++;
         } else if (directionShortName.equals(Direction.WEST.getShortName())) {
-            marsRoverPosition.coordinates.coordinatesX--;
+            marsRoverPosition.coordinatesX--;
         } else if (directionShortName.equals(Direction.SOUTH.getShortName())) {
-            marsRoverPosition.coordinates.coordinatesY--;
+            marsRoverPosition.coordinatesY--;
         }
 
         assertThat(marsRoverPosition.getCoordinatesX(), is(1));
@@ -84,13 +84,13 @@ public class MarsRoverPositionTest {
 
         String directionShortName = marsRoverPosition.direction.getShortName();
         if (directionShortName.equals(Direction.NORTH.getShortName())) {
-            marsRoverPosition.coordinates.coordinatesY++;
+            marsRoverPosition.coordinatesY++;
         } else if (directionShortName.equals(Direction.EAST.getShortName())) {
-            marsRoverPosition.coordinates.coordinatesX++;
+            marsRoverPosition.coordinatesX++;
         } else if (directionShortName.equals(Direction.WEST.getShortName())) {
-            marsRoverPosition.coordinates.coordinatesX--;
+            marsRoverPosition.coordinatesX--;
         } else if (directionShortName.equals(Direction.SOUTH.getShortName())) {
-            marsRoverPosition.coordinates.coordinatesY--;
+            marsRoverPosition.coordinatesY--;
         }
 
         assertThat(marsRoverPosition.getCoordinatesX(), is(-1));
@@ -102,13 +102,13 @@ public class MarsRoverPositionTest {
 
         String directionShortName = marsRoverPosition.direction.getShortName();
         if (directionShortName.equals(Direction.NORTH.getShortName())) {
-            marsRoverPosition.coordinates.coordinatesY++;
+            marsRoverPosition.coordinatesY++;
         } else if (directionShortName.equals(Direction.EAST.getShortName())) {
-            marsRoverPosition.coordinates.coordinatesX++;
+            marsRoverPosition.coordinatesX++;
         } else if (directionShortName.equals(Direction.WEST.getShortName())) {
-            marsRoverPosition.coordinates.coordinatesX--;
+            marsRoverPosition.coordinatesX--;
         } else if (directionShortName.equals(Direction.SOUTH.getShortName())) {
-            marsRoverPosition.coordinates.coordinatesY--;
+            marsRoverPosition.coordinatesY--;
         }
 
         assertThat(marsRoverPosition.getCoordinatesY(), is(-1));

@@ -2,20 +2,22 @@ package com.twschool.practice.marsrover;
 
 
 public class MarsRoverPosition {
-     Coordinates coordinates;
+    int coordinatesX;
+    int coordinatesY;
      Direction direction;
 
     public MarsRoverPosition(int coordinatesX, int coordinatesY, String direction) {
-        this.coordinates = new Coordinates(coordinatesX, coordinatesY);
+        this.coordinatesX = coordinatesX;
+        this.coordinatesY = coordinatesY;
         this.direction = Direction.fromShortName(direction);
     }
 
     public int getCoordinatesX() {
-        return coordinates.getCoordinatesX();
+        return this.coordinatesX;
     }
 
     public int getCoordinatesY() {
-        return coordinates.getCoordinatesY();
+        return this.coordinatesY;
     }
 
     public String getDirectionShortName() {
