@@ -14,12 +14,10 @@ public class MarsRover {
     }
 
     public MarsRoverPosition receive(String commands) {
-        Arrays.asList(commands.split("")).forEach(this::receiveSingleCommand);
-        return getMarsRoverPosition();
+     MarsRoverMove marsRoverMove = new MarsRoverMove();
+     marsRoverMove.moveAccordCommands(this.marsRoverPosition,commands);
+     return this.marsRoverPosition;
     }
 
-    private void receiveSingleCommand(String command) {
-        MarsRoverMove marsRoverMove = new MarsRoverMove();
-        marsRoverMove.moveAccordCommand(this.marsRoverPosition,command);
-    }
+
 }
