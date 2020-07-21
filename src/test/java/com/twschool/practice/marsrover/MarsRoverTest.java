@@ -38,5 +38,15 @@ public class MarsRoverTest {
         assertThat(marsRoverPosition.getCoordinatesY(), is(1) );
         assertThat(marsRoverPosition.getDirectionShortName(), is("N"));
     }
+    @Test
+    public void should_return_x_0_y_0_and_E_when_receive_BM_command_give_mars_rover_with_init_place_x_0_y_1_E() {
+        MarsRover marsRover = new MarsRover(new MarsRoverPosition(2,1, "E"));
+
+        MarsRoverPosition marsRoverPosition = marsRover.receive("BM");
+
+        assertThat(marsRoverPosition.getCoordinatesX(), is(0));
+        assertThat(marsRoverPosition.getCoordinatesY(), is(0) );
+        assertThat(marsRoverPosition.getDirectionShortName(), is("E"));
+    }
 
 }
